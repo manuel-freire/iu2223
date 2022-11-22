@@ -35,7 +35,6 @@ E.bindSearch("#search-in-user-editions-input", ".user-edition-table-row");
 E.bindSortColumn("tr>th");
 
 // cosas que exponemos para poder usarlas desde la consola
-window.update = update;
 window.Cm = Cm;
 window.V = V;
 window.E = E;
