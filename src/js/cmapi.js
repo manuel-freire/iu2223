@@ -595,6 +595,7 @@ function saveState() {
     console.log(`copia guardada ${randomToken}; copias de seguridad existentes`, stack);
 
     localStorage.setItem(randomToken, JSON.stringify(state));
+    return randomToken;
 }
 
 /**
