@@ -94,6 +94,14 @@ function update() {
     }
 }
 
+// asociamos botones de prueba para guardar y restaurar estado
+U.one("#save").addEventListener('click', () => Cm.saveState());
+U.one("#clean").addEventListener('click', () => localStorage.clear());
+U.one("#restore").addEventListener('click', () => {
+    Cm.restoreState();
+    update()
+});
+
 //
 // Código que se ejecuta al lanzar la aplicación. 
 // No pongas código de este tipo en ningún otro sitio
