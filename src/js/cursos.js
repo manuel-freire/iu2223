@@ -89,6 +89,7 @@ function update() {
 
         E.bindSortColumn("tr>th");
 
+        E.bindCheckboxColumn("#users");
     } catch (e) {
         console.log('Error actualizando', e);
     }
